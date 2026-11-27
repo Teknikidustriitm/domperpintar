@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
@@ -6,21 +7,25 @@
 
     <title>Dompet Pintar</title>
 
-    <link rel="icon"
-        href="https://cdn.discordapp.com/attachments/1271652584230490194/1511343572904054895/image.png?ex=6a201be3&is=6a1eca63&hm=755e31099b8dc747c7b789306de5c118fbeb2b468a1e79f395a07172122f7a53&">
+    <link rel="icon" href="https://cdn.discordapp.com/attachments/1271652584230490194/1511343572904054895/image.png?ex=6a201be3&is=6a1eca63&hm=755e31099b8dc747c7b789306de5c118fbeb2b468a1e79f395a07172122f7a53">
 
     <style>
-        html, body {
+        * {
             margin: 0;
             padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
             width: 100%;
             height: 100%;
-            background-color: #eee;
             overflow: hidden;
+            background: #eee;
         }
 
         .iframe-container {
             width: 100%;
+            height: 100vh;
             height: 100dvh;
             overflow: hidden;
         }
@@ -35,18 +40,13 @@
 </head>
 
 <body>
-
     <div class="iframe-container">
         <iframe
             id="app"
             src="https://script.google.com/macros/s/AKfycbyLkmGYbU8TIavMZEW--Pl0l6Ivi6kDjEAV4Qtmzu8K7waQKZ2fCSQeb1Mssup_Tnbibg/exec"
-            scrolling="yes"
-            allowfullscreen="true"
-            webkitallowfullscreen="true"
-            mozallowfullscreen="true"
-            allow="fullscreen; camera; microphone; display-capture; geolocation;">
+            allow="fullscreen; camera; microphone; display-capture; geolocation"
+            allowfullscreen>
         </iframe>
     </div>
-
 </body>
 </html>
